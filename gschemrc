@@ -1,0 +1,24 @@
+;; UI
+; (window-size 1400 990) ; Good size for 1600x1200 
+(load (build-path geda-rc-path "gschem-colormap-lightbg")) ; ui color map, print map in gafrc
+(define default-titleblock "title-A3.sym")
+(undo-levels 30)
+(undo-type "disk") ; (undo-type "memory")
+(undo-panzoom "disabled")
+(zoom-with-pan "enabled")
+(zoom-gain 20) ; percents
+
+;; Mouse
+; "mousepan" "action" "stroke" "repeat"
+(middle-button "action")
+(third-button "mousepan")
+(warp-cursor "enabled")
+
+
+;; Print
+(paper-size 11.69 8.27) ; A4 
+(print-command "~/.gEDA/gschem-print")
+(output-color "enabled") ; color map in gafrc
+;(postscript-font-scale 1.2)
+(setpagedevice-orientation "enabled")
+(setpagedevice-pagesize "enabled") 

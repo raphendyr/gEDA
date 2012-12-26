@@ -1,0 +1,21 @@
+; PRINT
+(load (build-path geda-rc-path "print-colormap-lightbg"))
+
+; LIBRARY
+
+;(reset-component-library)   ; don't use system symbols
+;(reset-source-library)      ; don't use system schematics
+
+; current dir stuff
+(define current-working-directory ".")
+(define usersymbols (build-path (getenv "HOME") ".gEDA" "symbols"))
+
+;(component-library current-working-directory "Current dir")
+;(source-library current-working-directory "Current dir")
+
+(component-library (build-path usersymbols "misc") "Misc (git)")
+(component-library (build-path usersymbols "microcontrollers") "Microcontrollers (git)")
+(component-library (build-path usersymbols "logic") "Logic (git)")
+(component-library (build-path usersymbols "digital") "Digital (git)")
+(component-library (build-path usersymbols "devices") "Devices (git)")
+(component-library (build-path usersymbols "connectors") "Connectors (git)")

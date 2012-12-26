@@ -1,0 +1,29 @@
+#!/bin/sh
+
+if ! which zenity 1>/dev/null 2>&1; then
+    echo "Error: zenity not found"
+    exit 1
+fi
+
+if ! which ps2pdf 1>/dev/null 2>&1; then
+    echo "Error: ps2pdf not found"
+    exit 1
+fi
+
+f=$(zenity --title="Save PDF as" --file-selection \
+	--save --confirm-overwrite \
+	--file-filter="*.pdf" --file-filter="*")
+o=$?
+
+if [ $o -eq 0 ]; then
+        zenity --title="Invalid file" --error \
+	--text="You selected invalid file. I don't know how."
+elif [ "$f" ]; then
+        out=$( (ps2pdf - "$f" >&2|zenity --title="Printing..." \
+		--progress --pulsate --auto-close --no-cancel) 2>&1)
+        if [ "$out" ]; then
+                zenity --title="Creating pdf failed" --error \
+		--text="ps2pdf error:\n$out"
+        fi
+fi
+
