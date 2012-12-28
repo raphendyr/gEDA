@@ -1,0 +1,69 @@
+v 20110115 2
+P 1500 1400 1100 1400 1 0 0
+{
+T 1600 1500 5 10 0 0 0 0 1
+pintype=unknown
+T 1045 1395 5 10 1 1 0 6 1
+pinlabel=VBUS
+T 1195 1445 5 10 1 1 0 0 1
+pinnumber=1
+T 1600 1400 5 10 0 0 0 0 1
+pinseq=1
+}
+P 1500 1100 1100 1100 1 0 0
+{
+T 1600 1200 5 10 0 0 0 0 1
+pintype=unknown
+T 1045 1095 5 10 1 1 0 6 1
+pinlabel=D-
+T 1195 1145 5 10 1 1 0 0 1
+pinnumber=2
+T 1600 1100 5 10 0 0 0 0 1
+pinseq=2
+}
+P 1500 800 1100 800 1 0 0
+{
+T 1600 900 5 10 0 0 0 0 1
+pintype=unknown
+T 1045 795 5 10 1 1 0 6 1
+pinlabel=D+
+T 1195 845 5 10 1 1 0 0 1
+pinnumber=3
+T 1600 800 5 10 0 0 0 0 1
+pinseq=3
+}
+P 1500 500 1100 500 1 0 0
+{
+T 1600 600 5 10 0 0 0 0 1
+pintype=unknown
+T 1045 495 5 10 1 1 0 6 1
+pinlabel=ID
+T 1195 545 5 10 1 1 0 0 1
+pinnumber=4
+T 1600 500 5 10 0 0 0 0 1
+pinseq=4
+}
+P 1500 200 1100 200 1 0 0
+{
+T 1600 300 5 10 0 0 0 0 1
+pintype=unknown
+T 1045 195 5 10 1 1 0 6 1
+pinlabel=GND
+T 1195 245 5 10 1 1 0 0 1
+pinnumber=5
+T 1600 200 5 10 0 0 0 0 1
+pinseq=5
+}
+L 1100 1700 0 1700 3 0 0 0 -1 -1
+L 1100 1700 1100 0 3 0 0 0 -1 -1
+L 1100 0 0 0 3 0 0 0 -1 -1
+T 1000 1800 8 10 1 1 0 6 1
+refdes=USB?
+T 0 2200 8 10 1 1 0 0 5
+description=VBUS is 5v
+ID permits distinction of host from slave
+ - host connected to signal ground
+ - slave not connected
+GND is signal ground
+T 0 3300 8 10 0 0 0 0 1
+footprint=MICRO_USB_AB_FCI MICRO_USB_AB_JST MICRO_USB_AB_MOLEX_R MINI_USB_AB_JAE MINI_USB_AB_MOLEX MINI_USB_AB_MOLEX_HOLES
