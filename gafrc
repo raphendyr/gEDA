@@ -20,4 +20,5 @@
 (component-library (build-path usersymbols "devices") "Devices (git)")
 (component-library (build-path usersymbols "crystals") "Crystals (git)")
 (component-library (build-path usersymbols "connectors") "Connectors (git)")
+(component-library (build-path usersymbols "buttons") "Buttons (git)")
 (component-library (build-path usersymbols "application specific") "Application Specific (git)")
