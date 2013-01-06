@@ -16,6 +16,7 @@
 (component-library (build-path usersymbols "misc") "Misc (git)")
 (component-library (build-path usersymbols "microcontrollers") "Microcontrollers (git)")
 (component-library (build-path usersymbols "logic") "Logic (git)")
+(component-library (build-path usersymbols "generic") "Generic (git)")
 (component-library (build-path usersymbols "digital") "Digital (git)")
 (component-library (build-path usersymbols "devices") "Devices (git)")
 (component-library (build-path usersymbols "crystals") "Crystals (git)")
