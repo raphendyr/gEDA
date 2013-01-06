@@ -4,7 +4,7 @@ P 2600 3000 2300 3000 1 0 0
 T 2325 2975 5 8 0 1 180 6 1
 pintype=pas
 T 2245 2995 5 10 1 1 0 6 1
-pinlabel=TX +
+pinlabel=TX+
 T 2395 3045 5 10 1 1 0 0 1
 pinnumber=1
 T 2325 3025 5 8 0 1 0 0 1
@@ -95,22 +95,22 @@ P 100 500 400 500 1 0 0
 T 375 475 5 8 0 1 180 0 1
 pintype=shield
 T 455 495 5 10 1 1 0 0 1
-pinlabel=Shield 1
+pinlabel=Shield
 T 305 545 5 10 0 1 0 6 1
 pinnumber=sh1
 T 375 525 5 8 0 1 0 6 1
-pinseq=9
+pinseq=13
 }
 P 100 200 400 200 1 0 0
 {
 T 375 175 5 8 0 1 180 0 1
 pintype=shield
 T 455 195 5 10 1 1 0 0 1
-pinlabel=Shield 2
+pinlabel=Shield
 T 305 245 5 10 0 1 0 6 1
 pinnumber=sh2
 T 375 225 5 8 0 1 0 6 1
-pinseq=10
+pinseq=14
 }
 T 400 3350 9 10 1 0 0 0 1
 RJ45
@@ -126,3 +126,47 @@ T 400 3800 8 10 0 0 0 0 1
 description=RJ45 Connector
 T 400 3600 8 10 0 0 0 0 1
 footprint=RJ45_SHIELDED_NOLED_STEWARD
+P 100 2600 400 2600 1 0 0
+{
+T 375 2575 5 8 0 1 180 0 1
+pintype=out
+T 455 2595 5 10 1 1 0 0 1
+pinlabel=GRN-
+T 305 2645 5 10 0 1 0 6 1
+pinnumber=9
+T 375 2625 5 8 0 1 0 6 1
+pinseq=9
+}
+P 100 2200 400 2200 1 0 0
+{
+T 375 2175 5 8 0 1 180 0 1
+pintype=in
+T 455 2195 5 10 1 1 0 0 1
+pinlabel=GRN+
+T 305 2245 5 10 0 1 0 6 1
+pinnumber=10
+T 375 2225 5 8 0 1 0 6 1
+pinseq=10
+}
+P 100 1800 400 1800 1 0 0
+{
+T 375 1775 5 8 0 1 180 0 1
+pintype=out
+T 455 1795 5 10 1 1 0 0 1
+pinlabel=YEL-
+T 305 1845 5 10 0 1 0 6 1
+pinnumber=11
+T 375 1825 5 8 0 1 0 6 1
+pinseq=11
+}
+P 100 1400 400 1400 1 0 0
+{
+T 375 1375 5 8 0 1 180 0 1
+pintype=in
+T 455 1395 5 10 1 1 0 0 1
+pinlabel=YEL+
+T 305 1445 5 10 0 1 0 6 1
+pinnumber=12
+T 375 1425 5 8 0 1 0 6 1
+pinseq=12
+}
