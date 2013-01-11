@@ -97,7 +97,7 @@ pintype=shield
 T 455 495 5 10 1 1 0 0 1
 pinlabel=Shield
 T 305 545 5 10 0 1 0 6 1
-pinnumber=sh1
+pinnumber=ch1
 T 375 525 5 8 0 1 0 6 1
 pinseq=13
 }
@@ -108,7 +108,7 @@ pintype=shield
 T 455 195 5 10 1 1 0 0 1
 pinlabel=Shield
 T 305 245 5 10 0 1 0 6 1
-pinnumber=sh2
+pinnumber=ch2
 T 375 225 5 8 0 1 0 6 1
 pinseq=14
 }
