@@ -15,7 +15,7 @@ f=$(zenity --title="Save PDF as" --file-selection \
 	--file-filter="*.pdf" --file-filter="*")
 o=$?
 
-if [ $o -eq 0 ]; then
+if [ $o -ne 0 ]; then
         zenity --title="Invalid file" --error \
 	--text="You selected invalid file. I don't know how."
 elif [ "$f" ]; then
