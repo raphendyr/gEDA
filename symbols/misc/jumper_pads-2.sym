@@ -26,7 +26,7 @@ pinseq=2
 T 250 550 8 10 1 1 0 6 1
 refdes=J?
 T 0 800 8 10 0 0 0 0 1
-footprint=JUMPER_PADS2_OPEN
+footprint=JUMPER_PADS2
 T 0 1000 8 10 0 0 0 0 1
 numslots=0
 T 0 1200 8 10 0 0 0 0 1
