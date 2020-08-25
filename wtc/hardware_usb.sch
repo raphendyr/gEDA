@@ -1,0 +1,65 @@
+v 20100214 2
+C 57500 44200 1 0 0 usb_mini_micro.sym
+{
+T 58500 46000 5 10 1 1 0 6 1
+refdes=USB1
+T 57500 46700 5 10 1 1 0 0 5
+description=VBUS is 5v
+ID permits distinction of host from slave
+ - host connected to signal ground
+ - slave not connected
+GND is signal ground
+T 57500 47500 5 10 0 0 0 0 1
+footprint=MICRO_USB_AB_FCI MICRO_USB_AB_JST MICRO_USB_AB_MOLEX_R MINI_USB_AB_JAE MINI_USB_AB_MOLEX MINI_USB_AB_MOLEX_HOLES
+}
+C 59200 43900 1 0 0 gnd-1.sym
+C 59700 45200 1 0 0 resistor-1.sym
+{
+T 60000 45600 5 10 0 0 0 0 1
+device=RESISTOR
+T 59900 45700 5 10 1 1 0 0 1
+refdes=R1
+T 59900 45500 5 10 1 1 0 0 1
+value=22
+}
+C 59700 44900 1 0 0 resistor-1.sym
+{
+T 60000 45300 5 10 0 0 0 0 1
+device=RESISTOR
+T 59900 44700 5 10 1 1 0 0 1
+refdes=R2
+T 59900 44500 5 10 1 1 0 0 1
+value=22
+}
+C 60600 45200 1 0 0 io-1.sym
+{
+T 60900 45600 5 10 1 0 0 0 1
+net=D-:1
+T 60800 45800 5 10 0 0 0 0 1
+device=none
+T 60900 45500 5 10 1 1 0 1 1
+value=usb
+}
+C 60600 44900 1 0 0 io-1.sym
+{
+T 60900 44600 5 10 1 0 0 0 1
+net=D+:1
+T 60800 45500 5 10 0 0 0 0 1
+device=none
+T 60900 44800 5 10 1 1 0 1 1
+value=usb
+}
+C 59100 45800 1 0 0 generic-power.sym
+{
+T 59300 46050 5 10 1 1 0 3 1
+net=Vusb:1
+}
+N 59000 44400 59300 44400 4
+N 59300 44400 59300 44200 4
+N 59300 45800 59300 45600 4
+N 59300 45600 59000 45600 4
+N 59000 45000 59700 45000 4
+N 59000 45300 59700 45300 4
+C 56100 40900 0 0 0 title-A4.sym
+T 60300 41900 9 10 1 0 0 0 1
+USB components for chips with hardware usb
